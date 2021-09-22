@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import Classexample from './components/Classexample';
+import Classexample2 from './components/Classexample2';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Classexample 
+        title = {"Water Bottles"}
+        desc = {"Drink 2 cups of water a day!"}
+        cost = {2.99}
+      />
+
+      <Classexample 
+        title = {"Toys"}
+        desc = {"Made out of Legos."}
+        cost = {10.99}
+      />
+
+      <Classexample2 
+        title = {"iPad"}
+        desc = {"One of Apple's many products."}
+        cost = {199.99}
+        initialStock = {30}
+      />
+
+      <Classexample2 
+        title = {"Surface Pro"}
+        desc = {"One of Microsofts's many products."}
+        cost = {"1,200.99"}
+        initialStock = {100}
+      />
     </div>
   );
 }
